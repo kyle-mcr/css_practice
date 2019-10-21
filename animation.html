@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 10px solid black;
+            border-radius: 50%;
+            margin-left: 50px;
+            margin-top: 50px;
+            animation: example 5s linear infinite;
+
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            margin-left: 45%;
+            margin-top: -30px;
+            border: 1px solid black;
+            border-radius: 50%;
+            animation: example2 5s linear infinite;
+
+        }
+        h1{
+            animation:example3 5s linear infinite;
+        }
+
+        @keyframes example {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(270deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes example2 {
+            0% {
+                background-color: blue;
+                width: 50px;
+                height: 50px;
+            }
+
+            25% {
+                background-color: green;
+            }
+
+            50% {
+                background-color: yellow;
+                width: 150px;
+                height: 150px;
+            }
+
+            75% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: blue;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        @keyframes example3 {
+            0% {
+                text-shadow: 1px 1px 10px green;
+
+            }
+
+            25% {
+                text-shadow: 1px 1px 10px blue;
+
+
+            }
+
+            50% {
+                text-shadow: 1px 1px 10px purple;
+
+
+            }
+
+            75% {
+                text-shadow: 1px 1px 10px red;
+
+
+            }
+
+            100% {
+                text-shadow: 1px 1px 10px green;
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="circle"></div>
+    </div>
+    <h1>Kyle McReynolds</h1>
+
+</body>
+
+</html>
